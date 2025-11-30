@@ -1,0 +1,8 @@
+docker login
+docker build -t <image-name>:<tag> <path>
+docker tag <local-image-id> <username>/<image-name>:<tag>
+docker push <username>/<image-name>:<tag>
+docker build --no-cache -t myapp:latest . -- Build without using cache 
+
+docker exec -it <name/id> sh
+
